@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-class Square(self):
-    def square:
-        self.__size = size
+class Square:
+    def __init__(self):
+        self._size = size
     pass
-
