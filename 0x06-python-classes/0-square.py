@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-# empyt class
+""" empty class that defines a square """
 class Square:
     pass
