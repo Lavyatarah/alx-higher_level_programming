@@ -1,0 +1,2 @@
+#!/usr/bin/pythonnn3
+id()
