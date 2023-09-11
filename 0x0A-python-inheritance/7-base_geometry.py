@@ -20,8 +20,4 @@ class BaseGeometry:
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-<<<<<<< HEAD
             raise ValueError("{} must be greater than 0".format(name))
-=======
-            raise ValueError("{} must be greater than 0".format(name))
->>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357

@@ -15,8 +15,4 @@ def is_kind_of_class(obj, a_class):
     """
     if isinstance(obj, a_class):
         return True
-<<<<<<< HEAD
     return False
-=======
-    return False
->>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357
