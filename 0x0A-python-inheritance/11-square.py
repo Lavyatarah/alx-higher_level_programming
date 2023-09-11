@@ -15,4 +15,8 @@ class Square(Rectangle):
         """
         self.integer_validator("size", size)
         super().__init__(size, size)
+<<<<<<< HEAD
         self.__size = size
+=======
+        self.__size = size
+>>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357

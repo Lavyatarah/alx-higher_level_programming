@@ -70,8 +70,4 @@ Now test it:
     >>> bg.integer_validator("age", None)
     Traceback (most recent call last):
     TypeError: age must be an integer
-<<<<<<< HEAD
     
-=======
-    
->>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357
