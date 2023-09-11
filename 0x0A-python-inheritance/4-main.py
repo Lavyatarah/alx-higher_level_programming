@@ -7,4 +7,9 @@ if inherits_from(a, int):
 if inherits_from(a, bool):
     print("{} inherited from class {}".format(a, bool.__name__))
 if inherits_from(a, object):
+<<<<<<< HEAD
     print("{} inherited from class {}".format(a, object.__name__))
+
+=======
+    print("{} inherited from class {}".format(a, object.__name__))
+>>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357

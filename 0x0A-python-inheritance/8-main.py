@@ -14,4 +14,8 @@ except Exception as e:
 try:
     r2 = Rectangle(4, True)
 except Exception as e:
+<<<<<<< HEAD
     print("[{}] {}".format(e.__class__.__name__, e))
+=======
+    print("[{}] {}".format(e.__class__.__name__, e))
+>>>>>>> 53ceee224eea9badc22325c09efb0bb2e857c357
