@@ -1,15 +1,34 @@
-#!/usr/bin/python3
-"""
-Lists all states from the database hbtn_0e_0_usa.
-Usage: ./0-select_states.py <mysql username> \
-                            <mysql password> \
-                             <database name>
-"""
-import sys
 import MySQLdb
 
+def list_states(mysql_username, mysql_password, database_name):
+   """Lists all states from the specified database in ascending order by states.id.
+
+   Args:
+       mysql_username (str): The MySQL username.
+       mysql_password (str): The MySQL password.
+       database_name (str): The name of the database to connect to.
+   """
+
+   db = MySQLdb.connect(
+       host="localhost",
+       user=mysql_username,
+       passwd=mysql_password,
+       db=database_name,
+       port=3306
+   )
+
+   cursor = db.cursor()
+   cursor.execute("SELECT * FROM states ORDER BY id ASC")
+   results = cursor.fetchall()
+
+   for row in results:
+       print(row)
+
+   db.close()
+
+# Example usage:
 if __name__ == "__main__":
-    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    c = db.cursor()
-    c.execute("SELECT * FROM `states`")
-    [print(state) for state in c.fetchall()]
+   mysql_username = input("Enter MySQL username: ")
+   mysql_password = input("Enter MySQL password: ")
+   database_name = "hbtn_0e_0_usa"  # Replace with the actual database name if needed
+   list_states(mysql_username, mysql_password, database_name)
